@@ -1,0 +1,6 @@
+.idea/*
+node_modules/
+dist/
+mockServer.pid
+npm-debug.log
+*.iml

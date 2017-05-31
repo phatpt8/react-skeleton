@@ -1,0 +1,51 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "react structure implementation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --hot --inline --config ./webpack/webpack.config.js",
+    "mock:run": "nodemon ./test/resources/server & echo $! > mockServer.pid",
+    "mock:kill": "kill -9 $(cat mockServer.pid) && rm mockServer.pid"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phatpt8/react-skeleton.git"
+  },
+  "keywords": [],
+  "author": "phatpt8",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/phatpt8/react-skeleton.git#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "cors": "^2.7.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-form": "^5.3.1",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
+    "redux-ui": "0.0.15",
+    "webpack": "^1.3.0",
+    "webpack-dev-server": "^1.14.1",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators": "^6.8.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "express": "^4.14.0",
+    "karma": "^1.1.1"
+  }
+}
